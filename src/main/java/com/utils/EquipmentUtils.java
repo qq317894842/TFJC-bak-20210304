@@ -16,6 +16,10 @@ import java.util.List;
  * @Description:
  */
 public class EquipmentUtils {
+    /**
+     * 获取json数据
+     * @return
+     */
     public static String getJsonStr(){
         Equipment e1 = new Equipment();
         Equipment e2 = new Equipment();
