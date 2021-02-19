@@ -1,7 +1,6 @@
 package com.utils;
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
+import com.aliyun.openservices.shade.com.alibaba.fastjson.JSONArray;
 import com.aliyun.openservices.shade.io.netty.util.internal.StringUtil;
 import com.entity.Equipment;
 

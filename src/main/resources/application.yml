@@ -1,5 +1,29 @@
-esb:
-  sdk:
-    limitValue: 2
-    clearDay: 3
-    serviceTypes: FLIGHT,FLIGHT_REQE,FLIGHT_BASE
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        threads:
+          max: 1000
+          min-spare: 30
+    port: 8088
+spring:
+    application:
+      name: tfjc
+    mvc:
+      static-path-pattern: /static/**
+    jackson:
+      time-zone: GMT+8
+      date-format: yyyy-MM-dd HH:mm:ss
+    activiti:
+#      database-schema-update: drop-create
+#      database-schema-update: false
+      database-schema-update: true
+#      database-schema-update: create-drop
+      check-process-definitions: false
+#      historyLevel: none
+#      historyLevel: activity
+#       默认
+      historyLevel: audit
+#      historyLevel: full
+      db-history-used: true
+

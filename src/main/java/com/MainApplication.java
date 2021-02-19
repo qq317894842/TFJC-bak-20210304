@@ -1,6 +1,6 @@
 package com;
 
-import com.alibaba.fastjson.JSONArray;
+import com.aliyun.openservices.shade.com.alibaba.fastjson.JSONArray;
 import com.utils.EquipmentUtils;
 
 /**
@@ -10,6 +10,7 @@ import com.utils.EquipmentUtils;
  */
 public class MainApplication {
     public static void main(String[] args) {
+        com.alibaba.fastjson.support.spring.FastJsonpResponseBodyAdvice a;
         //模拟从MMIS返回的json数据
         String jsonStr = EquipmentUtils.getJsonStr();
         System.out.println("获取的json： \n"+jsonStr);
