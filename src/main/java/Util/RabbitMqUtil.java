@@ -1,3 +1,6 @@
+package Util;
+
+import com.FlightServiceListener;
 import com.rabbitmq.client.*;
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,7 +13,7 @@ import java.util.concurrent.TimeoutException;
 public class RabbitMqUtil {
     public static void postData(String queue, String data) {
         checkchannel();
-        postTomq(queue,FlightServiceListener.connection,RabbitMqUtil.channel,data);
+        postTomq(queue, FlightServiceListener.connection,RabbitMqUtil.channel,data);
     }
     public static void postTomq(String QUEUE_NAME,Connection connection,Channel channel,String message1){
         try {

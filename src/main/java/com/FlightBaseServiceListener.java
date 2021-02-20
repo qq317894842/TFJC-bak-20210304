@@ -1,7 +1,8 @@
+package com;
+
 import com.caacitc.esb.constants.SdkOrderAction;
 import com.caacitc.esb.listener.XssMessageOrderListener;
 import Util.*;
-import com.rabbitmq.client.Connection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
